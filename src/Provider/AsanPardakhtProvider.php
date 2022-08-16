@@ -68,7 +68,7 @@ class AsanPardakhtProvider extends AbstractProvider
         openssl_sign(
             $input,
             $binary_signature,
-            config('wallet.asanpardakht.debug_private_key'),
+            config('wallet.asanpardakht.private_key'),
             OPENSSL_ALGO_SHA256
         );
 
